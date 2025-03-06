@@ -60,7 +60,7 @@ export default function RootLayout({
             </main>
             <footer className="mt-16 flex justify-end space-x-4">
               <a
-                href="https://www.instagram.com/YOURHANDLE"
+                href="http://instagram.com/__mdap"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-green-600 transition-colors"
@@ -68,7 +68,7 @@ export default function RootLayout({
                 <FaInstagram className="h-6 w-6" />
               </a>
               <a
-                href="https://www.linkedin.com/company/YOURCOMPANY"
+                href="https://www.linkedin.com/in/mariomdap"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-green-600 transition-colors"
@@ -76,7 +76,7 @@ export default function RootLayout({
                 <FaLinkedin className="h-6 w-6" />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:info@mdap.io"
                 className="text-black hover:text-green-600 transition-colors"
               >
                 <MdEmail className="h-7 w-7 -mt-0.5" />
