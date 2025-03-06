@@ -3,13 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-fira: var(--font-fira-sans);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-fira);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +22,53 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-fira), Arial, Helvetica, sans-serif;
+  font-size: 16px; /* Base font size for the entire site */
+  padding: 0 1rem; /* Add default horizontal padding */
+  min-height: 100vh;
+  position: relative;
+  overflow-y: auto;
 }
+
+@media (max-width: 640px) {
+  body {
+    padding: 0 1.5rem; /* Increase padding on mobile */
+  }
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
+ul {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-gradient-background {
+    background: linear-gradient(-45deg, #86efac, #bbf7d0, #fecdd3, #fda4af);
+    background-size: 400% 400%;
+    animation: gradient-animation 30s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
