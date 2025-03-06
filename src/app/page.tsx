@@ -10,7 +10,7 @@ export default function Home() {
       </p>
 
       <p>
-        MDAP has toured Mexico, Germany, the Netherlands, Spain, the United States, one of its most recent presentations has been at the LA Design Festival, the Mutek Mexico festival and in Italy, Venice at the inauguration of avilion 0/4 "Beyond Code and Time" organized by Mediations Biennale and World Design Capital
+        MDAP has toured Mexico, Germany, the Netherlands, Spain, the United States, one of its most recent presentations has been at the LA Design Festival, the Mutek Mexico festival and in Italy, Venice at the inauguration of avilion 0/4 &quot;Beyond Code and Time&quot; organized by Mediations Biennale and World Design Capital
       </p>
     </div>
   );
